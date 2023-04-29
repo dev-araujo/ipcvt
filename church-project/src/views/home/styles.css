@@ -53,3 +53,14 @@
   text-align: center;
   color: white;
 }
+
+/* STYLES LIB REACT ELASTIC CAROUSEL */
+
+.rec.rec-arrow {
+  background: rgba(15, 67, 70, 1) !important;
+  color: white;
+}
+
+.rec.rec-arrow :hover {
+  background: rgba(15, 67, 70, 1) !important;
+}
