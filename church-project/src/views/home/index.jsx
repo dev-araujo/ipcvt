@@ -4,6 +4,10 @@ import axios from "axios";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 import Carousel from "react-elastic-carousel";
+import { Icon } from '@iconify/react';
+import FacebookTwoToneIcon from '@mui/icons-material/FacebookTwoTone';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 import { BASE_URL } from "../../service/BASE_URL";
 
@@ -27,8 +31,18 @@ const Home = () => {
   }, []);
 
   return (
+  <>
+    <section className='social-media' >
+      <p>siga-nos em nossas redes sociais</p>
+      <div className='icons' >
+        <FacebookTwoToneIcon className='facebook-icon' />
+        <YouTubeIcon className='youtube-icon' />
+        <InstagramIcon className='instagram-icon' />
+        <Icon icon="mdi:spotify" className='spotify-icon' />
+      </div>
+    </section>
     <section className="container-videos-area">
-      <Carousel itemsToShow={2}>
+      <Carousel itemsToShow={1}>
         {dataBase.map((video, index) => {
           return (
             <section key={index} className="videos-area">
@@ -50,6 +64,14 @@ const Home = () => {
           );
         })}
       </Carousel>
+
+      <footer>
+        <div className='footer-content' >
+          <p>ipcvt - Igreja Presbiteriana Central em Vilar dos Teles  - Rua Venância Oliveira Santos,
+             289 - Vilar dos Teles  - CEP 25560-000  São João de  Meriti/RJ 
+          </p>
+        </div>
+      </footer>
       <Backdrop
         sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={load}
@@ -57,7 +79,9 @@ const Home = () => {
         <CircularProgress color="inherit" />
       </Backdrop>
     </section>
+  </>
   );
 };
 
 export default Home;
+
