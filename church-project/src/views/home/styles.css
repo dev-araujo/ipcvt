@@ -49,7 +49,7 @@ body {
 }
 
 .title-videos {
-  font-size: 180%;
+  font-size: 1.8rem;
   padding-top: 3px;
   text-align: center;
   color: white;
@@ -68,9 +68,11 @@ body {
 .social-media p {
   color: #666666;
   font-weight: 600;
+  text-align: center;
   text-transform: uppercase;
   font-size: 34px;
   margin-bottom: 22px;
+
 }
 
 .icons{
@@ -79,17 +81,12 @@ body {
   width: 20%;
 }
 
-.css-i4bv87-MuiSvgIcon-root{
+.css-i4bv87-MuiSvgIcon-root, .spotify-icon {
   color: #666;
   cursor: pointer;
   font-size: 3.5rem !important;
 }
 
-.spotify-icon{
-  font-size: 56px;
-  color: #666;
-  cursor: pointer;
-}
 
 .spotify-icon:hover{
   color: #179946 !important;
@@ -166,4 +163,144 @@ footer {
   color: white;
   font-weight: 500;
   font-size: 17px;
+  text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+/* LAPTOP*/
+
+@media screen and (max-width: 1592px) {
+  .title-videos{
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .title-videos{
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .title-videos{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1108px) {
+  .title-videos{
+    font-size: 1.0rem;
+  }
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 940px) {
+  .title-videos{
+    font-size: 0.9rem;
+  }
+
+  .icons{
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 856px) {
+  .title-videos{
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 696px) {
+  .title-videos{
+    font-size: 0.5rem;
+  }
+
+  .icons{
+    width: 33%;
+  }
+
+  .css-i4bv87-MuiSvgIcon-root, .spotify-icon {
+    font-size: 3.1rem !important;
+  }
+
+  .social-media p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+
+.css-i4bv87-MuiSvgIcon-root, .spotify-icon {
+    font-size: 2.7rem !important;
+}
+
+.social-media p {
+  font-size: 26px;
+}
+
+.footer-content p {
+  font-size: 14px;
+}
+}
+
+
+@media screen and (max-width: 530px) {
+  .title-videos{
+    font-size: 0.44rem;
+  }
+
+  .footer-content p {
+    font-size: 12px;
+  }
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 483px) {
+  .title-videos {
+    font-size: 0.34rem;
+}
+
+.icons{
+  width: 38%;
+}
+}
+
+@media screen and (max-width: 411px) {
+  .footer-content p {
+    font-size: 9px;
+  }
+
+  .social-media p {
+    font-size: 18px;
+  }
+
+  .css-i4bv87-MuiSvgIcon-root, .spotify-icon {
+    font-size: 2.1rem !important;
+}
+
+.icons {
+  width: 35%;
+}
+}
+
+@media screen and (max-width: 398px) {
+  .title-videos {
+    font-size: 0.3rem;
+}
+
+.css-i4bv87-MuiSvgIcon-root, .spotify-icon {
+  font-size: 1.9rem !important;
+}
+}
+
+
+@media screen and (max-width: 367px) {
+  .title-videos {
+    font-size: 0.27rem;
+}
 }
