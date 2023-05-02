@@ -4,10 +4,6 @@ import axios from "axios";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 import Carousel from "react-elastic-carousel";
-// import { Icon } from "@iconify/react";
-// import FacebookTwoToneIcon from "@mui/icons-material/FacebookTwoTone";
-// import YouTubeIcon from "@mui/icons-material/YouTube";
-// import InstagramIcon from "@mui/icons-material/Instagram";
 
 import { BASE_URL } from "../../service/BASE_URL";
 
@@ -35,10 +31,10 @@ const Home = () => {
       <section className="social-media">
         <p>siga-nos em nossas redes sociais</p>
         <div className="icons">
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-youtube"></i>
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-spotify"></i>
+          <i className="bi bi-facebook"></i>
+          <i className="bi bi-youtube"></i>
+          <i className="bi bi-instagram"></i>
+          <i className="bi bi-spotify"></i>
         </div>
       </section>
       <section className="container-videos-area">
