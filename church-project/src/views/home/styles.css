@@ -2,26 +2,13 @@ body {
   background-color: aliceblue;
 }
 
-.container-videos-area {
-  display: grid;
-}
-
 .videos-area {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-
   background: radial-gradient(
-    circle,
+    linear,
     rgba(0, 0, 0, 1) 0%,
     rgba(15, 67, 70, 1) 35%,
     rgba(1, 28, 29, 1) 100%
   );
-}
-
-.container {
-  height: 1000px;
 }
 
 .layout-videos {

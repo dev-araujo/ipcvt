@@ -1,6 +1,5 @@
 header {
   display: flex;
-  transition: all ease 0.8s;
   position: fixed;
   width: 100%;
 }

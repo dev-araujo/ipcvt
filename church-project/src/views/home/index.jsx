@@ -28,15 +28,6 @@ const Home = () => {
 
   return (
     <>
-      <section className="social-media">
-        <p>siga-nos em nossas redes sociais</p>
-        <div className="icons">
-          <i className="bi bi-facebook"></i>
-          <i className="bi bi-youtube"></i>
-          <i className="bi bi-instagram"></i>
-          <i className="bi bi-spotify"></i>
-        </div>
-      </section>
       <section className="container-videos-area">
         <Carousel itemsToShow={1}>
           {dataBase.map((video, index) => {
@@ -60,6 +51,15 @@ const Home = () => {
             );
           })}
         </Carousel>
+        <section className="social-media">
+          <p>siga-nos em nossas redes sociais</p>
+          <div className="icons">
+            <i className="bi bi-facebook"></i>
+            <i className="bi bi-youtube"></i>
+            <i className="bi bi-instagram"></i>
+            <i className="bi bi-spotify"></i>
+          </div>
+        </section>
 
         <footer>
           <div className="footer-content">
