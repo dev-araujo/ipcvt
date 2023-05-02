@@ -4,14 +4,13 @@ body {
 
 .container-videos-area {
   display: grid;
-
 }
 
 .videos-area {
-   display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column; 
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 
   background: radial-gradient(
     circle,
@@ -72,44 +71,39 @@ body {
   text-transform: uppercase;
   font-size: 34px;
   margin-bottom: 22px;
-
 }
 
-.icons{
+.icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 20%;
 }
 
-.css-i4bv87-MuiSvgIcon-root, .spotify-icon {
+.icons .bi {
   color: #666;
   cursor: pointer;
   font-size: 3.5rem !important;
 }
 
-
-.spotify-icon:hover{
+.bi-spotify:hover {
   color: #179946 !important;
   transition: all 0.25s;
 }
 
-
-.facebook-icon:hover{
+.bi-facebook:hover {
   color: #3b5998 !important;
   transition: all 0.25s;
 }
 
-
-.youtube-icon:hover{
-  color:  #c4302b !important;
+.bi-youtube:hover {
+  color: #c4302b !important;
   transition: all 0.25s;
 }
 
-.instagram-icon:hover{
+.bi-instagram:hover {
   color: #f26549 !important;
   transition: all 0.25s;
 }
-
 
 /* STYLES LIB REACT ELASTIC CAROUSEL */
 
@@ -122,7 +116,7 @@ body {
   background: rgba(15, 67, 70, 1) !important;
 }
 
-.eVXyLj{
+.eVXyLj {
   background: rgba(15, 67, 70, 1) !important;
   box-shadow: #fff 0px 0px 1px 3px !important;
 }
@@ -132,7 +126,8 @@ body {
     circle,
     rgba(0, 0, 0, 1) 0%,
     rgba(15, 67, 70, 1) 35%,
-    rgba(1, 28, 29, 1) 100%)  
+    rgba(1, 28, 29, 1) 100%
+  );
 }
 
 .iASUtr {
@@ -146,10 +141,9 @@ footer {
   align-items: center;
 }
 
-
 /* FOOTER */
 
-.footer-content{
+.footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,64 +160,62 @@ footer {
   text-align: center;
 }
 
-
 /* RESPONSIVE */
 
 /* LAPTOP*/
 
 @media screen and (max-width: 1592px) {
-  .title-videos{
+  .icons {
+    width: 23rem;
+  }
+
+  .title-videos {
     font-size: 1.6rem;
   }
 }
 
 @media screen and (max-width: 1420px) {
-  .title-videos{
+  .title-videos {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 1260px) {
-  .title-videos{
+  .title-videos {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 1108px) {
-  .title-videos{
-    font-size: 1.0rem;
+  .icons {
+    display: flex;
+    justify-content: space-around;
+  }
+  .title-videos {
+    font-size: 1rem;
   }
 }
-
 
 /* TABLET */
 
 @media screen and (max-width: 940px) {
-  .title-videos{
+  .title-videos {
     font-size: 0.9rem;
-  }
-
-  .icons{
-    width: 27%;
   }
 }
 
 @media screen and (max-width: 856px) {
-  .title-videos{
+  .title-videos {
     font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 696px) {
-  .title-videos{
+  .title-videos {
     font-size: 0.5rem;
   }
 
-  .icons{
-    width: 33%;
-  }
-
-  .css-i4bv87-MuiSvgIcon-root, .spotify-icon {
+  .icons .bi {
     font-size: 3.1rem !important;
   }
 
@@ -233,23 +225,21 @@ footer {
 }
 
 @media screen and (max-width: 560px) {
-
-.css-i4bv87-MuiSvgIcon-root, .spotify-icon {
+  .icons .bi {
     font-size: 2.7rem !important;
-}
+  }
 
-.social-media p {
-  font-size: 26px;
-}
+  .social-media p {
+    font-size: 26px;
+  }
 
-.footer-content p {
-  font-size: 14px;
+  .footer-content p {
+    font-size: 14px;
+  }
 }
-}
-
 
 @media screen and (max-width: 530px) {
-  .title-videos{
+  .title-videos {
     font-size: 0.44rem;
   }
 
@@ -263,14 +253,13 @@ footer {
 @media screen and (max-width: 483px) {
   .title-videos {
     font-size: 0.34rem;
-}
-
-.icons{
-  width: 38%;
-}
+  }
 }
 
 @media screen and (max-width: 411px) {
+  .icons {
+    width: 18rem;
+  }
   .footer-content p {
     font-size: 9px;
   }
@@ -279,28 +268,23 @@ footer {
     font-size: 18px;
   }
 
-  .css-i4bv87-MuiSvgIcon-root, .spotify-icon {
+  .icons .bi {
     font-size: 2.1rem !important;
-}
-
-.icons {
-  width: 35%;
-}
+  }
 }
 
 @media screen and (max-width: 398px) {
   .title-videos {
     font-size: 0.3rem;
-}
+  }
 
-.css-i4bv87-MuiSvgIcon-root, .spotify-icon {
-  font-size: 1.9rem !important;
+  .icons .bi {
+    font-size: 1.9rem !important;
+  }
 }
-}
-
 
 @media screen and (max-width: 367px) {
   .title-videos {
     font-size: 0.27rem;
-}
+  }
 }
