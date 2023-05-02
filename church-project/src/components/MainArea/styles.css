@@ -46,6 +46,24 @@ h1 {
 
 @media (max-width: 556px) {
   .mainArea {
-    width: 560px;
+    width: 100%;
+  }
+
+  .mainArea__content h1 {
+    font-size: 47px;
+  }
+
+  .mainArea__content p {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .mainArea__content h1 {
+    font-size: 32px;
+  }
+
+  .mainArea__content p {
+    font-size: 18px;
   }
 }
