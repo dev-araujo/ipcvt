@@ -20,21 +20,20 @@ function Footer() {
 
   return (
     <footer className="footer">
+      <div className="footer-content">
+        <img
+          className="footer__logo"
+          onClick={() => nav("/")}
+          src={ImageLogo}
+          alt="logo-ipcvt"
+        />
+        <p>
+          ipcvt - Igreja Presbiteriana Central em Vilar dos Teles - Rua Venância
+          Oliveira Santos, 289 - Vilar dos Teles - CEP 25560-000 São João de
+          Meriti/RJ
+        </p>
+      </div>
       <div className="footer__container">
-        <div className="footer-content">
-          <img
-            className="footer__logo"
-            onClick={() => nav("/")}
-            src={ImageLogo}
-            alt="logo-ipcvt"
-          />
-          <p>
-            ipcvt - Igreja Presbiteriana Central em Vilar dos Teles - Rua
-            Venância Oliveira Santos, 289 - Vilar dos Teles - CEP 25560-000 São
-            João de Meriti/RJ
-          </p>
-        </div>
-
         <section className="activities">
           <p className="title">Atividades </p>
           <div className="activies__list">
