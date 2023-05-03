@@ -1,0 +1,73 @@
+.footer__logo {
+  width: 95px;
+  height: 49px;
+  padding-top: 3px;
+}
+
+.footer {
+  width: 100%;
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  background-color: #024f54;
+}
+
+.footer-content {
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  width: 40%;
+  margin-left: 12rem;
+}
+
+/* STYLES SOCIAL MEDIA AREA*/
+
+/* .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  .social-media p {
+    color: #666666;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+    margin-bottom: 22px;
+  }
+  
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 20%;
+  }
+  
+  .icons .bi {
+    color: #666;
+    cursor: pointer;
+    font-size: 3.5rem !important;
+  }
+  
+  .bi-spotify:hover {
+    color: #179946 !important;
+    transition: all 0.25s;
+  }
+  
+  .bi-facebook:hover {
+    color: #3b5998 !important;
+    transition: all 0.25s;
+  }
+  
+  .bi-youtube:hover {
+    color: #c4302b !important;
+    transition: all 0.25s;
+  }
+  
+  .bi-instagram:hover {
+    color: #f26549 !important;
+    transition: all 0.25s;
+  }
+   */

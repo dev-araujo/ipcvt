@@ -6,8 +6,8 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Carousel from "react-elastic-carousel";
 
 import { BASE_URL } from "../../service/BASE_URL";
-
 import "./styles.css";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   const [dataBase, setDataBase] = useState([]);
@@ -27,7 +27,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="home">
       <section className="container-videos-area">
         <Carousel itemsToShow={1}>
           {dataBase.map((video, index) => {
@@ -51,25 +51,8 @@ const Home = () => {
             );
           })}
         </Carousel>
-        <section className="social-media">
-          <p>siga-nos em nossas redes sociais</p>
-          <div className="icons">
-            <i className="bi bi-facebook"></i>
-            <i className="bi bi-youtube"></i>
-            <i className="bi bi-instagram"></i>
-            <i className="bi bi-spotify"></i>
-          </div>
-        </section>
+        <Footer />
 
-        <footer>
-          <div className="footer-content">
-            <p>
-              ipcvt - Igreja Presbiteriana Central em Vilar dos Teles - Rua
-              Venância Oliveira Santos, 289 - Vilar dos Teles - CEP 25560-000
-              São João de Meriti/RJ
-            </p>
-          </div>
-        </footer>
         <Backdrop
           sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
           open={load}
@@ -77,7 +60,7 @@ const Home = () => {
           <CircularProgress color="inherit" />
         </Backdrop>
       </section>
-    </>
+    </div>
   );
 };
 

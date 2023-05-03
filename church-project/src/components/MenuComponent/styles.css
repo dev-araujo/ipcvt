@@ -7,12 +7,11 @@ header {
 .activeColor {
   background-color: #282828;
 }
-
 .menu__logo {
   width: 95px;
   height: 49px;
-  margin-left: 30px;
   padding-top: 3px;
+  margin-left: 12rem;
 }
 
 .menu__nav,

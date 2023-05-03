@@ -1,0 +1,38 @@
+import ImageLogo from "../../assets/logo-ipcvt.png";
+
+import { useNavigate } from "react-router-dom";
+import "./styles.css";
+
+function Footer() {
+  const nav = useNavigate();
+
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        <img
+          className="footer__logo"
+          onClick={() => nav("/")}
+          src={ImageLogo}
+          alt="logo-ipcvt"
+        />
+        <p>
+          ipcvt - Igreja Presbiteriana Central em Vilar dos Teles - Rua Venância
+          Oliveira Santos, 289 - Vilar dos Teles - CEP 25560-000 São João de
+          Meriti/RJ
+        </p>
+      </div>
+
+      <section className="social-media">
+        <p>siga-nos em nossas redes sociais</p>
+        <div className="icons">
+          <i className="bi bi-facebook"></i>
+          <i className="bi bi-youtube"></i>
+          <i className="bi bi-instagram"></i>
+          <i className="bi bi-spotify"></i>
+        </div>
+      </section>
+    </footer>
+  );
+}
+
+export default Footer;
