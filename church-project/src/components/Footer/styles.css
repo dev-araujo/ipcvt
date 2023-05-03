@@ -5,69 +5,87 @@
 }
 
 .footer {
+  color: white;
   width: 100%;
-  height: 16vh;
+  height: 180px;
   display: flex;
   align-items: center;
   background-color: #024f54;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer-content {
-  color: white;
   font-weight: 500;
-  font-size: 17px;
-  width: 40%;
-  margin-left: 12rem;
+  font-size: 16px;
+  width: 760px;
+}
+/* ACTIVITIES */
+
+.activities {
+  margin-top: 2.5rem;
+}
+.activities .title {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.activies__list p {
+  font-size: 14px;
 }
 
 /* STYLES SOCIAL MEDIA AREA*/
+.social-media {
+  margin-left: 4rem;
+}
+.social-media p {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+}
 
-/* .social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px 0;
-  }
-  
-  .social-media p {
-    color: #666666;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 34px;
-    margin-bottom: 22px;
-  }
-  
-  .icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 20%;
-  }
-  
-  .icons .bi {
-    color: #666;
-    cursor: pointer;
-    font-size: 3.5rem !important;
-  }
-  
-  .bi-spotify:hover {
-    color: #179946 !important;
-    transition: all 0.25s;
-  }
-  
-  .bi-facebook:hover {
-    color: #3b5998 !important;
-    transition: all 0.25s;
-  }
-  
-  .bi-youtube:hover {
-    color: #c4302b !important;
-    transition: all 0.25s;
-  }
-  
-  .bi-instagram:hover {
-    color: #f26549 !important;
-    transition: all 0.25s;
-  }
-   */
+.social-media a {
+  color: white;
+}
+
+.icons .bi {
+  cursor: pointer;
+  font-size: 24px !important;
+}
+.icons a:nth-child(2) {
+  margin-left: 1rem;
+}
+.icons a:nth-child(3) {
+  margin-left: 1rem;
+}
+.icons a:nth-child(4) {
+  margin-left: 1rem;
+}
+
+.bi-spotify:hover {
+  color: #179946 !important;
+  transition: all 0.25s;
+}
+
+.bi-facebook:hover {
+  color: #3b5998 !important;
+  transition: all 0.25s;
+}
+
+.bi-youtube:hover {
+  color: #c4302b !important;
+  transition: all 0.25s;
+}
+
+.bi-instagram:hover {
+  color: #f26549 !important;
+  transition: all 0.25s;
+}
