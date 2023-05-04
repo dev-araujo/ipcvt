@@ -3,6 +3,7 @@ import ImageLogo from "../../assets/logo-ipcvt.png";
 import { useNavigate } from "react-router-dom";
 
 import social from "../../db/social.json";
+import activities from "../../db/activities.json";
 
 import "./styles.css";
 
@@ -29,9 +30,11 @@ function Footer() {
         <section className="activities">
           <p className="title">Atividades </p>
           <div className="activies__list">
-            <p>Domingo -09:00 - EBD (presencial)</p>
-            <p>Domingo -18:00 - Culto (presencial e online)</p>
-            <p>Quarta - 19:30 - Reencontro (presencial)</p>
+            {activities.activities.map((activity, index) => {
+              return (
+                <p key={index}>{`${activity.day} - ${activity.hour} - ${activity.name}`}</p>
+              );
+            })}
           </div>
         </section>
 

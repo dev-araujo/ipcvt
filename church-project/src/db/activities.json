@@ -1,0 +1,7 @@
+{
+  "activities": [
+    { "name": "EBD (presencial)", "day": "Domingo", "hour": "09:00" },
+    { "name": "Culto (presencial/online)", "day": "Domingo", "hour": "18:00" },
+    { "name": "Reencontro (presencial)", "day": "Quarta", "hour": "19:30" }
+  ]
+}

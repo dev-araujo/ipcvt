@@ -4,11 +4,11 @@ import MainArea from "./components/MainArea";
 
 function App() {
   return (
-    <main>
+    <div>
       <MenuComponent />
       <MainArea />
       <Router />
-    </main>
+    </div>
   );
 }
 

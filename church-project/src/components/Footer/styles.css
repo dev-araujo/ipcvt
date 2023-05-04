@@ -22,6 +22,18 @@
   justify-content: space-around;
 }
 
+@media (max-width: 1520px) {
+  .footer__container {
+    justify-content: center;
+  }
+  .footer-content {
+    margin-left: 16rem;
+  }
+  .footer-content p {
+    width: 500px;
+  }
+}
+
 .footer-content {
   font-weight: 500;
   font-size: 16px;
