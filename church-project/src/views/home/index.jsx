@@ -1,25 +1,23 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 import Carousel from "react-elastic-carousel";
 
-import { BASE_URL } from "../../service/BASE_URL";
-import "./styles.css";
 import Footer from "../../components/Footer";
+import videos from "../../db/videos.json";
+
+import "./styles.css";
 
 const Home = () => {
   const [dataBase, setDataBase] = useState([]);
   const [load, setLoad] = useState(true);
 
   const getData = () => {
-    axios.get(BASE_URL).then((response) => {
-      setDataBase(response.data);
-      if (response.data.length > 0) {
-        setLoad(false);
-      }
-    });
+    setDataBase(videos.items);
+    if (videos.items.length > 0) {
+      setLoad(false);
+    }
   };
 
   useEffect(() => {

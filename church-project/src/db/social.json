@@ -1,0 +1,20 @@
+{
+  "contentIcons": [
+    {
+      "class": "bi bi-facebook",
+      "link": "https://pt-br.facebook.com/ipcvt/"
+    },
+    {
+      "class": "bi bi-youtube",
+      "link": "https://www.youtube.com/@IPCVTIgrejaPresbiteriana"
+    },
+    {
+      "class": "bi bi-instagram",
+      "link": "https://www.instagram.com/ipcvt/"
+    },
+    {
+      "class": "bi bi-spotify",
+      "link": "https://open.spotify.com/show/1RWZu10Ghrz8AlRaLS3imu"
+    }
+  ]
+}

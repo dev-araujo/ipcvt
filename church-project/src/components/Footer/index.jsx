@@ -1,22 +1,13 @@
 import ImageLogo from "../../assets/logo-ipcvt.png";
 
 import { useNavigate } from "react-router-dom";
+
+import social from "../../db/social.json";
+
 import "./styles.css";
 
 function Footer() {
   const nav = useNavigate();
-  const contentIcons = [
-    { class: "bi bi-facebook", link: "https://pt-br.facebook.com/ipcvt/" },
-    {
-      class: "bi bi-youtube",
-      link: "https://www.youtube.com/@IPCVTIgrejaPresbiteriana",
-    },
-    { class: "bi bi-instagram", link: "https://www.instagram.com/ipcvt/" },
-    {
-      class: "bi bi-spotify",
-      link: "https://open.spotify.com/show/1RWZu10Ghrz8AlRaLS3imu",
-    },
-  ];
 
   return (
     <footer className="footer">
@@ -47,8 +38,8 @@ function Footer() {
         <section className="social-media">
           <p>Redes sociais</p>
           <div className="icons">
-            {contentIcons.map((icon) => (
-              <a href={icon.link} target="_blank" rel="noreferrer">
+            {social.contentIcons.map((icon, index) => (
+              <a key={index} href={icon.link} target="_blank" rel="noreferrer">
                 <i className={icon.class}></i>
               </a>
             ))}
