@@ -1,0 +1,14 @@
+{
+  "media": [
+    { "icon": "bi bi-facebook", "url": "https://www.facebook.com/ipcvt/" },
+    {
+      "icon": "bi bi-youtube",
+      "url": "https://www.youtube.com/@IPCVTIgrejaPresbiteriana"
+    },
+    { "icon": "bi bi-instagram", "url": "https://www.instagram.com/ipcvt/" },
+    {
+      "icon": "bi bi-spotify",
+      "url": "https://open.spotify.com/show/1RWZu10Ghrz8AlRaLS3imu"
+    }
+  ]
+}

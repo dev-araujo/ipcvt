@@ -5,7 +5,8 @@ import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 import Carousel from "react-elastic-carousel";
 
-import { BASE_URL } from "../../service/BASE_URL";
+import videos from "../../db/videos.json";
+import social from "../../db/social.json";
 
 import "./styles.css";
 
@@ -14,12 +15,10 @@ const Home = () => {
   const [load, setLoad] = useState(true);
 
   const getData = () => {
-    axios.get(BASE_URL).then((response) => {
-      setDataBase(response.data);
-      if (response.data.length > 0) {
-        setLoad(false);
-      }
-    });
+    setDataBase(videos.items);
+    if (videos.items.length > 0) {
+      setLoad(false);
+    }
   };
 
   useEffect(() => {
@@ -54,10 +53,11 @@ const Home = () => {
         <section className="social-media">
           <p>siga-nos em nossas redes sociais</p>
           <div className="icons">
-            <i className="bi bi-facebook"></i>
-            <i className="bi bi-youtube"></i>
-            <i className="bi bi-instagram"></i>
-            <i className="bi bi-spotify"></i>
+            {social.media.map((item, index) => (
+              <a key={index} target="_blank" rel="noreferrer" href={item.url}>
+                <i className={item.icon}></i>
+              </a>
+            ))}
           </div>
         </section>
 
