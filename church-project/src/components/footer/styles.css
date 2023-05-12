@@ -22,3 +22,26 @@ footer {
     font-size: 17px;
     text-align: center;
   }
+
+/* TABLET */
+
+  @media screen and (max-width: 560px) {
+    .footer-content p {
+        font-size: 14px;
+      }
+  }
+
+  @media screen and (max-width: 530px) {
+    .footer-content p {
+        font-size: 12px;
+      }
+  }
+
+/*MOBILE*/
+
+@media screen and (max-width: 411px) {
+    .footer-content p {
+        font-size: 9px;
+      }
+}
+

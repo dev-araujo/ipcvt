@@ -8,6 +8,8 @@ import Carousel from "react-elastic-carousel";
 import videos from "../../db/videos.json";
 import social from "../../db/social.json";
 
+
+
 import "./styles.css";
 
 const Home = () => {
@@ -60,6 +62,9 @@ const Home = () => {
             ))}
           </div>
         </section>
+
+        
+
         <Backdrop
           sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
           open={load}
