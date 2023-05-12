@@ -1,5 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
-import { Home, About, Donation, Where } from '../views/index';
+import { Routes, Route } from 'react-router-dom'
+import { Home, About, Donation, Where } from '../views/index'
 
 const Router = () => {
   return (
