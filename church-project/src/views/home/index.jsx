@@ -15,7 +15,7 @@ const Home = () => {
   const [load, setLoad] = useState(true);
 
   const getData = () => {
-    setDataBase(videos.items);
+    setDataBase(videos.items.reverse());
     if (videos.items.length > 0) {
       setLoad(false);
     }
