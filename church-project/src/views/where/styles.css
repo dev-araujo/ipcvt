@@ -2,11 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-top: 40px;
 }
 
 iframe {
     width: 50%;
-    border: 1px solid;
+    border: black 1px solid;
     border-radius: 5%;
+    margin-bottom: 10px
+}
+
+.map-orientation {
+    font-size: 0.9rem;
+    font-weight: 500;
 }

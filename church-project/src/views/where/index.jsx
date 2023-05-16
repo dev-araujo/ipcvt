@@ -13,6 +13,8 @@ const Where = () => {
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
+
+      <p className='map-orientation' >Para ver uma <strong>rota</strong> do seu endereço até a igreja, clique em <strong>"mais opções"</strong> no mapa acima.</p>
     </section>
     </>
   )
