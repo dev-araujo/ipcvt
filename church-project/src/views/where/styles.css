@@ -8,12 +8,32 @@
 
 iframe {
     width: 50%;
-    border: black 1px solid;
+    border: black 1px solid !important;
     border-radius: 5%;
     margin-bottom: 10px
 }
 
 .map-orientation {
+    margin-bottom: 15px;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+.routes-church {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 275px;
+    height: 250px;
+    padding-right: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-top: 10px;
 }
