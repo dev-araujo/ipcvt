@@ -16,28 +16,28 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100vw;
+  height: 460px;
   border-radius: 10px;
   padding-bottom: 10px;
 }
 
 .thumb {
-  width: 50vw;
-  height: 100%;
+  width: 920px;
+  height: 460px;
   border-radius: 10px;
   transition: all 0.25s;
+}
+.title-videos {
+  font-size: 16px;
+  padding-top: 3px;
+  text-align: center;
+  color: white;
 }
 
 .thumb:hover {
   background-size: 150%;
   filter: grayscale(100%) blur(2px);
   transform: scale(98%);
-}
-
-.title-videos {
-  font-size: 1.8rem;
-  padding-top: 3px;
-  text-align: center;
-  color: white;
 }
 
 /* STYLES SOCIAL MEDIA AREA*/
@@ -120,8 +120,6 @@ body {
   margin-top: 15px;
 }
 
-
-
 /* RESPONSIVE */
 
 /* LAPTOP*/
@@ -130,22 +128,6 @@ body {
   .icons {
     width: 23rem;
   }
-
-  .title-videos {
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 1420px) {
-  .title-videos {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 1260px) {
-  .title-videos {
-    font-size: 1.2rem;
-  }
 }
 
 @media screen and (max-width: 1108px) {
@@ -153,30 +135,11 @@ body {
     display: flex;
     justify-content: space-around;
   }
-  .title-videos {
-    font-size: 1rem;
-  }
 }
 
 /* TABLET */
 
-@media screen and (max-width: 940px) {
-  .title-videos {
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 856px) {
-  .title-videos {
-    font-size: 0.7rem;
-  }
-}
-
 @media screen and (max-width: 696px) {
-  .title-videos {
-    font-size: 0.5rem;
-  }
-
   .icons .bi {
     font-size: 3.1rem !important;
   }
@@ -196,19 +159,7 @@ body {
   }
 }
 
-@media screen and (max-width: 530px) {
-  .title-videos {
-    font-size: 0.44rem;
-  }
-}
-
 /*MOBILE*/
-
-@media screen and (max-width: 483px) {
-  .title-videos {
-    font-size: 0.34rem;
-  }
-}
 
 @media screen and (max-width: 411px) {
   .icons {
@@ -225,17 +176,25 @@ body {
 }
 
 @media screen and (max-width: 398px) {
-  .title-videos {
-    font-size: 0.3rem;
-  }
-
   .icons .bi {
     font-size: 1.9rem !important;
   }
 }
 
-@media screen and (max-width: 367px) {
+@media (max-width: 390px) {
+  .thumb {
+    width: 100vw;
+    height: 320px;
+  }
+
+  .rec.rec-arrow {
+    display: none !important;
+  }
   .title-videos {
-    font-size: 0.27rem;
+    text-align: justify;
+    width: 320px;
+  }
+  .layout-videos {
+    height: 400px;
   }
 }
